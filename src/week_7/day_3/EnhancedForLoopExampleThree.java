@@ -26,16 +26,20 @@ public class EnhancedForLoopExampleThree {
         int evenTotal = 0;
 
         int[] numbers = {3, 7, 2, 8, 5};
-        for(int number : numbers) {
-            if(number %2 == 0){
-
+        // Enhanced for loop to calculate totals for odd and even numbers
+        for (int number : numbers) {
+            if (number % 2 == 0) {  // Check if the number is even
+                evenTotal += number;
+            } else {  // Number is odd
+                oddTotal += number;
             }
-            System.out.print(number + " ");
-
-
-
         }
 
-
+        // Output the results
+        System.out.println("Total of odd numbers: " + oddTotal);
+        System.out.println("Total of even numbers: " + evenTotal);
     }
+
+
 }
+
